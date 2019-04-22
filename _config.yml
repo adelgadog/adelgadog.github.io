@@ -23,7 +23,7 @@ github_username:  adelgadog
 
 # Build settings
 markdown: kramdown
-remote_theme: jekyll-theme-merlot
+theme: minima
 plugins:
   - jekyll-feed
 
