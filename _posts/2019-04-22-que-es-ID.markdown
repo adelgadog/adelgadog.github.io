@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "¿Que es la Inyección de Dependencia"
+date:   2019-04-22 21:10:06 +0200
+categories: jekyll update
+---
+Una forma simple de resumirlo podría ser `“Hacer el trabajo duro en otro lugar”`.
+Esto es, a la hora de escribir un código, no realizamos las acciones o tareas de construir los objetos y recopilar los datos para estos en ese mismo código. Para esto realizamos llamadas o recibimos estos datos de otros códigos que son los que se encargan de realizar estas tareas.
+Estas llamadas o `“inyecciones”` se pueden realizar mediante una llamada directa a un método:
+{% highlight ruby %}
+codigoDeTrabajo.dameObjeto();
+{% endhighlight %}
+
+O bien se puede realizar mediante argumento:
+{% highlight ruby %}
+public void código(Objeto o){}
+{% endhighlight %}
+
+Esta técnica nos permite obtener los componentes necesarios para nuestro código `“a la carrera”` (on run time), es decir, no necesitamos arrastrar objetos desde el inicio del constructor, si no que podemos obtenerlos de forma directa en el mismo instante que los necesitamos, y dada la simplicidad de la “inyección” es fácilmente intercambiable o sustituible
+
