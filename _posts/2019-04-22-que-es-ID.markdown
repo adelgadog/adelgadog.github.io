@@ -13,7 +13,7 @@ codigoDeTrabajo.dameObjeto();
 
 O bien se puede realizar mediante argumento:
 {% highlight ruby %}
-public void código(Objeto o){}
+public void codigo(Objeto o){}
 {% endhighlight %}
 
 Esta técnica nos permite obtener los componentes necesarios para nuestro código `“a la carrera”` (on run time), es decir, no necesitamos arrastrar objetos desde el inicio del constructor, si no que podemos obtenerlos de forma directa en el mismo instante que los necesitamos, y dada la simplicidad de la “inyección” es fácilmente intercambiable o sustituible
